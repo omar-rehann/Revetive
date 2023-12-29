@@ -1,0 +1,74 @@
+html{
+    scroll-behavior: smooth;
+    transition: 0.6s;
+}
+@media (max-width:767px) {
+    .portfilo .mySwiper{
+        display: none;
+    }
+    
+}
+.portfilo .mySwiper .box{
+    flex-wrap: wrap !important;
+}
+/* start news */
+.news .continer .card:hover{
+    background-color: blue !important;
+    color: white !important;
+}
+.news .continer .card:hover i{
+    color: white !important;
+}
+.news .continer .card .card-body:hover{
+    color: white !important;
+}
+.news .continer .card:hover a{
+    color: white !important;
+}
+/* end news */
+
+.footerr{
+    background-color: black !important;
+    min-height: 50vh !important;
+    padding: 40px !important;
+   }
+   .footerr .box li a{
+    color: white !important;
+    list-style-type: none !important;
+    transition: 0.3s !important;
+   }
+   .footerr .box li a:hover{
+    color: #2196f3 !important;
+   }
+  .footerr .box i{
+    font-size: 25px !important;
+    margin-right: 4px !important;
+    margin-left: 5px !important;
+  }
+  .footerr .box img{
+    max-width: 25% !important;
+    flex-wrap: wrap !important;
+  }
+  .footerr .box{
+    line-height: 2 !important;
+  }
+  .footerr .box li{
+    list-style-type: none !important;
+    border-bottom:  solid 1px #777 !important;
+  }
+  .footerr .box li a i{
+    font-size: 15px !important;
+    vertical-align: middle !important;
+  }
+  .end{
+    background-color: #2196f3;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    line-height: 2;
+    margin: 0px auto;
+    font-style: italic;
+   }
+   .end i{
+    font-size: 25px;
+   }

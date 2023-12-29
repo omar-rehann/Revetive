@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- start swiper -->
+    <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    swiper-container {
+      width: 100%;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      height: calc((100% - 30px) / 2) !important;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+
+
+
+    <!-- end swiper -->
+
+
+
+
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body>
+    
+    <!-- start nav bar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Rev <span class="text-primary">Tive</span> </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active text-primary" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#abo">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#ser">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#por">Project</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#new">New</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#con">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Log In <i class="fa-solid fa-right-to-bracket" style="margin-right: 5px;"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- end nav bar -->
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- statt landing -->
+    <div id="carouselExampleCaptions" class="carousel slide">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/bg_image_1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+            <button class="btn btn-primary" style="border: 10px;padding: 10px;margin-bottom: 10px;">Read More</button>
+
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/bg_image_2.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+            <button class="btn btn-primary" style="border: 10px;padding: 10px;margin-bottom: 10px;">Read More</button>
+
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="img/bg_image_3.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            <button class="btn btn-primary" style="border: 10px;padding: 10px;margin-bottom: 10px;">Read More</button>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bg-primary text-light" style="border-radius: 50%;padding: 20px;font-size: 10px;" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon bg-primary text-light d-block" style="border-radius: 50%;padding: 20px;font-size: 10px;" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- end landing -->
+
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- start about -->
+    <div class="about" id="abo">
+      <div class="continer mt-2">
+        <div class="row m-2">
+          <div class=" col-md-12 col-lg-12 col-xl-6">
+            <div class="image m-1">
+              <img src="img/about.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class=" col-md-12 col-lg-12 col-xl-6">
+            <div class="text">
+              <p> <span style="font-weight: bold;margin-right: 5px;">1:</span>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of
+
+              </p>
+              <p><span style="font-weight: bold;margin-right: 5px;">2:</span>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of
+
+              </p><p><span style="font-weight: bold;margin-right: 5px;">3:</span>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of
+
+              </p><p><span style="font-weight: bold;margin-right: 5px;">4:</span>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of
+
+              </p>
+              <button class="btn btn-primary" style="border: 10px;padding: 10px;margin-bottom: 10px;">Read More</button>
+
+            </div>
+          </div>
+      
+          
+        </div>
+      </div>
+    </div>
+    <!-- end about -->
+    <div class="alert alert-warning m-1" role="alert">
+      A simple warning alert—check it out!
+    </div>
+    
+
+     <!-- ---------------------------------------------------------------------- -->
+     <!-- staer servivec -->
+     <div class="service" id="ser" style="margin-top: 30px;">
+      <div class="continer">
+        <h5 class="text-center text-black-50">Our Service</h5>
+        <h3 class="text-center">See what can we do for your Projects
+        </h3>
+      </div>
+      <div class="content">
+        <div class="row m-2 lh-lg">
+          <div class=" col-sm-6 col-md-4 col-lg-3 mb-2">
+            <div class="box text-center">
+              <i class="fa-solid fa-code" style="color: #0000ff;background-color: rgb(17, 17, 17,20%);padding: 10px;border-radius: 10px;font-size: 20px;"></i>
+              <h4>Web Development
+              </h4>
+            </div>
+
+          </div>
+          <div class=" col-sm-6 col-md-4 col-lg-3 mb-2">
+            <div class="box text-center">
+              <i class="fa-solid fa-laptop-code" style="color: #0000ff;background-color: rgb(17, 17, 17,20%);padding: 10px;border-radius: 10px;font-size: 20px;"></i>
+              <h4>Graphics Design
+              </h4>
+            </div>
+
+          </div>
+          <div class=" col-sm-6 col-md-4 col-lg-3 mb-2">
+            <div class="box text-center">
+              <i class="fa-solid fa-bullseye" style="color: #0000ff;background-color: rgb(17, 17, 17,20%);padding: 10px;border-radius: 10px;font-size: 20px;"></i>
+              <h4>SEO & Marketing
+              </h4>
+            </div>
+
+          </div>
+          <div class=" col-sm-6 col-md-4 col-lg-3 mb-2">
+            <div class="box text-center">
+              <i class="fa-solid fa-user-group" style="color: #0000ff;background-color: rgb(17, 17, 17,20%);padding: 10px;border-radius: 10px;font-size: 20px;"></i>
+              <h4>Customer Services
+              </h4>
+            </div>
+
+          </div>
+          <div class=" col-s text-centerm-6 col-md-4 col-lg-3 mb-2">
+            <div class="box text-center">
+              <i class="fa-solid fa-code-commit" style="color: #0000ff;background-color: rgb(17, 17, 17,20%);padding: 10px;border-radius: 10px;font-size: 20px;"></i>
+              <h4>App Development
+              </h4>
+            </div>
+
+          </div>
+          <div class=" col-sm-6 col-md-4 col-lg-3 mb-2">
+            <div class=" text-center">
+              <i class="fa-brands fa-css3" style="color: #0000ff;background-color: rgb(17, 17, 17,20%);padding: 10px;border-radius: 10px;font-size: 20px;"></i>
+              <h4>UI/UX Design
+              </h4>
+            </div>
+
+          </div>
+          <div class=" col-sm-6 col-md-4 col-lg-3 mb-2">
+            <div class="box text-center">
+              <i class="fa-solid fa-qrcode" style="color: #0000ff;background-color: rgb(17, 17, 17,20%);padding: 10px;border-radius: 10px;font-size: 20px;"></i>
+              <h4>Product Design
+
+              </h4>
+            </div>
+
+          </div>
+          <div class=" col-sm-6 col-md-4 col-lg-3 mb-2">
+            <div class="box text-center">
+              <i class="fa-solid fa-database " style="color: #0000ff;background-color: rgb(17, 17, 17,20%);padding: 10px;border-radius: 10px;font-size: 20px;"></i>
+              <h4>Data Analyst
+
+              </h4>
+            </div>
+
+          </div>
+          <div class=" col-sm-6 col-md-4 col-lg-3">
+            <div class=" text-center">
+              <i class="fa-brands fa-android" style="color: #0000ff;background-color: rgb(17, 17, 17,20%);padding: 10px;border-radius: 10px;font-size: 20px;"></i>              <h4>Al
+
+              </h4>
+            </div>
+
+          </div>
+          <div class=" col-sm-6 col-md-4 col-lg-3">
+
+            <div class="box text-center">
+              <i class="fa-solid fa-signal" style="color: #0000ff;background-color: rgb(17, 17, 17,20%);padding: 10px;border-radius: 10px;font-size: 20px;"></i>              <h4>System Analysis
+
+              </h4>
+            </div>
+
+          </div>
+          <div class=" col-sm-6 col-md-4 col-lg-3">
+            <div class="box text-center">
+              <i class="fa-solid fa-mobile" style="color: #0000ff;background-color: rgb(17, 17, 17,20%);padding: 10px;border-radius: 10px;font-size: 20px;"></i>              <h4>Mobile Apllction
+              </h4>
+            </div>
+
+          </div>
+          <div class="col-md-3 col-lg-3">
+            <div class="box text-center">
+              <i class="fa-solid fa-server" style="color: #0000ff;background-color: rgb(17, 17, 17,20%);padding: 10px;border-radius: 10px;font-size: 20px;"></i>              <h4>Data Science
+
+              </h4>
+            </div>
+
+          </div>
+          
+  
+        </var>
+        </div>
+      </div>
+     </div>
+     <!-- end service -->
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- start team -->
+    <div class="team" style="margin-top: 20px;">
+      <div class="continer">
+        <h5 class="text-center text-black-50">Our Team</h5>
+        <h3 class="text-center">The Expert Team on ReveTive
+
+        </h3>
+      </div>
+      <div class="content " style="margin:  10px auto;">
+        <div class="row m-2">
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card" style="width: 100%;">
+              <img src="img/teams/team_1.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Whakter White
+                </h5>
+                <p class="card-text text-black-50">Offer Company</p>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-facebook-messenger" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-solid fa-envelope" style="font-size: 20px;"></i></a>
+              </div>
+            </div>
+
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card" style="width: 100%;">
+              <img src="img/teams/team_2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Sarah Jonosn</h5>
+                <p class="card-text text-black-50">Owner The Store</p>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-facebook-messenger" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-solid fa-envelope" style="font-size: 20px;"></i></a>
+              </div>
+            </div>
+            
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card" style="width: 100%;">
+              <img src="img/teams/team_3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Anana Anderson</h5>
+                <p class="card-text text-black-50 ">Product Manger</p>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-facebook-messenger" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-solid fa-envelope" style="font-size: 20px;"></i></a>
+                </div>
+            </div>
+            
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card" style="width: 100%;">
+              <img src="img/team-4.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Mija Kiite</h5>
+                <p class="card-text text-black-50 ">Bussines Man</p>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-facebook-messenger" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-solid fa-envelope" style="font-size: 20px;"></i></a>
+                </div>
+            </div>
+            
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card" style="width: 100%;">
+              <img src="img/team-2.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Alura Jenson</h5>
+                <p class="card-text text-black-50 ">Ceo</p>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-facebook-messenger" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-solid fa-envelope" style="font-size: 20px;"></i></a>
+                </div>
+            </div>
+            
+          </div>
+          <div class="col-md-6 col-lg-4 mb-3">
+            <div class="card" style="width: 100%;">
+              <img src="img/team-3.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Amado Gold Ba</h5>
+                <p class="card-text text-black-50 ">Onwer Company</p>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-facebook-messenger" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-brands fa-linkedin" style="font-size: 20px;"></i>
+                </a>
+                <a href="#" style="text-decoration: none; color: black;"><i class="fa-solid fa-envelope" style="font-size: 20px;"></i></a>
+                </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end team -->
+    <div class="alert alert-primary m-2" role="alert">
+      A simple primary alert—check it out!
+    </div>
+    
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- start portfilo -->
+  <div class="portfilo" id="por" style="margin-top: 30px;">
+      <div class="continer m-2 d-flex justify-content-between align-items-center">
+       <div class="text m-2">
+            <h5 class="text-black-50">Portfilo</h5>
+           <h3>Our Latest Project:</h3>
+       </div>
+         <div class="info m-2">
+               <button class="btn btn-outline-primary" style="border: 10px;padding: 10px;margin-bottom: 10px;">Browes Project <i class="fa-solid fa-arrow-right" style="color: #f1f1f2;margin-right: 5px;"></i></button>
+         </div>
+      </div>
+      <div class="content">
+        <div class="row m-1">
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="img/portfolio/work-1.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="img/portfolio/work-2.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="img/portfolio/work-3.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="img/portfolio/work-4.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="img/portfolio/work-5.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="img/portfolio/work-6.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="img/portfolio/work-7.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="img/portfolio/work-8.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <div class="image mb-1">
+              <img src="img/portfolio/work-9.jpg" class="img-fluid rounded" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- start swiper -->
+      <swiper-container class="mySwiper m-2 flex-wrap" pagination="true" pagination-clickable="true" space-between="30"
+      slides-per-view="3">
+      <swiper-slide>
+        <div class="box" style="background-color: #ccc;padding: 30px;border-radius: 10px;">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, recusandae exercitationem dolor officia nesciunt ipsa, quae quidem quisquam voluptates maxime nam delectus porro mollitia, natus enim iure atque eaque tempore.</p>
+          <div class="info d-flex align-items-center">
+            <div class="image">
+              <img src="img/person/person_1.jpg" style="border-radius: 50%;margin-right: 5px;" alt="">
+            </div>
+            <div class="text">
+              <h5>Samo Watson</h5>
+              <h6 class="text-black-50">CEO-Mosh Elite LTD</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="box" style="background-color: #ccc;padding: 30px;border-radius: 10px;">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, recusandae exercitationem dolor officia nesciunt ipsa, quae quidem quisquam voluptates maxime nam delectus porro mollitia, natus enim iure atque eaque tempore.</p>
+          <div class="info d-flex align-items-center">
+            <div class="image">
+              <img src="img/person/person_2.jpg" style="border-radius: 50%;margin-right: 5px;" alt="">
+            </div>
+            <div class="text">
+              <h5>Amado Jold Ba</h5>
+              <h6 class="text-black-50">CEO-Mosh Elite LTD</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="box" style="background-color: #ccc;padding: 30px;border-radius: 10px;">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, recusandae exercitationem dolor officia nesciunt ipsa, quae quidem quisquam voluptates maxime nam delectus porro mollitia, natus enim iure atque eaque tempore.</p>
+          <div class="info d-flex align-items-center">
+            <div class="image">
+              <img src="img/person/person_3.jpg" style="border-radius: 50%;margin-right: 5px;" alt="">
+            </div>
+            <div class="text">
+              <h5>Frank Itoja</h5>
+              <h6 class="text-black-50">Owner The Company</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="box" style="background-color: #ccc;padding: 30px;border-radius: 10px;">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, recusandae exercitationem dolor officia nesciunt ipsa, quae quidem quisquam voluptates maxime nam delectus porro mollitia, natus enim iure atque eaque tempore.</p>
+          <div class="info d-flex align-items-center">
+            <div class="image">
+              <img src="img/person/person_4.jpg" style="border-radius: 50%;margin-right: 5px;" alt="">
+            </div>
+            <div class="text">
+              <h5>wilano Watson</h5>
+              <h6 class="text-black-50">Help Founder</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="box" style="background-color: #ccc;padding: 30px;border-radius: 10px;">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, recusandae exercitationem dolor officia nesciunt ipsa, quae quidem quisquam voluptates maxime nam delectus porro mollitia, natus enim iure atque eaque tempore.</p>
+          <div class="info d-flex align-items-center">
+            <div class="image">
+              <img src="https://img.freepik.com/free-photo/portrait-beautiful-girl-with-short-ginger-hair-looks-with-happy-relaxed-expression_273609-30416.jpg?size=626&ext=jpg&ga=GA1.2.159109612.1694961865&semt=sph" style="border-radius: 50%;margin-right: 5px;width: 100px;height: 100px;" alt="">
+            </div>
+            <div class="text">
+              <h5>Alura Watson</h5>
+              <h6 class="text-black-50">Owner The Company</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="box" style="background-color: #ccc;padding: 30px;border-radius: 10px;">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, recusandae exercitationem dolor officia nesciunt ipsa, quae quidem quisquam voluptates maxime nam delectus porro mollitia, natus enim iure atque eaque tempore.</p>
+          <div class="info d-flex align-items-center">
+            <div class="image">
+              <img src="https://img.freepik.com/free-photo/surprised-amused-good-looking-man-with-beard-open-mouth-fascinated-raise-eyebrows-wondered-enjoy-playing-amusement-park-pointing-fingers-left-astonished-with-amazing-promo-white-wall_176420-37055.jpg?size=626&ext=jpg&ga=GA1.2.159109612.1694961865&semt=sph" style="border-radius: 50%;margin-right: 5px;width: 100px;height: 100px;" alt="">
+            </div>
+            <div class="text">
+              <h5>Tomas Mular</h5>
+              <h6 class="text-black-50">CEO-Student-Manger</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="box" style="background-color: #ccc;padding: 30px;border-radius: 10px;">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, recusandae exercitationem dolor officia nesciunt ipsa, quae quidem quisquam voluptates maxime nam delectus porro mollitia, natus enim iure atque eaque tempore.</p>
+          <div class="info d-flex align-items-center">
+            <div class="image">
+              <img src="https://img.freepik.com/free-photo/indoor-shot-attractive-young-woman-with-glasses-posing-against-white-wall_273609-20347.jpg?size=626&ext=jpg&ga=GA1.2.159109612.1694961865&semt=sph" style="border-radius: 50%;margin-right: 5px;width: 100px;height: 100px;" alt="">
+            </div>
+            <div class="text">
+              <h5>Jasmine Jeo</h5>
+              <h6 class="text-black-50">CEO-Student-Manger</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="box" style="background-color: #ccc;padding: 30px;border-radius: 10px;">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, recusandae exercitationem dolor officia nesciunt ipsa, quae quidem quisquam voluptates maxime nam delectus porro mollitia, natus enim iure atque eaque tempore.</p>
+          <div class="info d-flex align-items-center">
+            <div class="image">
+              <img src="https://img.freepik.com/free-photo/waist-up-portrait-handsome-serious-unshaven-male-keeps-hands-together-dressed-dark-blue-shirt-has-talk-with-interlocutor-stands-against-white-wall-self-confident-man-freelancer_273609-16320.jpg?size=626&ext=jpg&ga=GA1.2.159109612.1694961865&semt=sph" style="border-radius: 50%;margin-right: 5px;width: 100px;height: 100px;" alt="">
+            </div>
+            <div class="text">
+              <h5>Xaivi Wilson</h5>
+              <h6 class="text-black-50">CEO-Owner-Manger</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+      <swiper-slide>
+        <div class="box" style="background-color: #ccc;padding: 30px;border-radius: 10px;">
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consequatur, recusandae exercitationem dolor officia nesciunt ipsa, quae quidem quisquam voluptates maxime nam delectus porro mollitia, natus enim iure atque eaque tempore.</p>
+          <div class="info d-flex align-items-center">
+            <div class="image">
+              <img src="https://img.freepik.com/free-photo/young-bearded-man-with-striped-shirt_273609-5677.jpg?size=626&ext=jpg&ga=GA1.1.159109612.1694961865&semt=sph" style="border-radius: 50%;margin-right: 5px;width: 100px;height: 100px;" alt="">
+            </div>
+            <div class="text">
+              <h5>Loistel Amankona</h5>
+              <h6 class="text-black-50">CEO-Owner-Manger</h6>
+            </div>
+          </div>
+        </div>
+      </swiper-slide>
+    </swiper-container>
+   
+      <!-- end swiper -->
+  </div>
+    <!-- end portfilo -->
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- start news -->
+    <div class="news" id="new" style="margin-top: 30px;">
+      <div class="continer">
+        <div class="row m-2">
+          <div class="col-md-6 col-lg-3">
+            <div class="card mb-3" style="width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">New Manger <i class="fa-regular fa-folder-open" style="margin-left: 5px;"></i></h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link" style="text-decoration: none;color: black;">Read More <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 5px;margin-top: 4px;"></i></a>
+                <a href="#" class="card-link" style="text-decoration: none;color: black;">Another Links <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 10px;margin-top: 5px;"></i></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card mb-3" style="width: 100%;">
+              <div class="card-body">
+                <h5 class="card-title">Bussines<i class="fa-solid fa-business-time" style="margin-left: 10px;"></i></h5>
+                <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="#" class="card-link" style="text-decoration: none;color: black;">Read More <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 5px;margin-top: 4px;"></i></a>
+                <a href="#" class="card-link" style="text-decoration: none;color: black;">Another Links <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 10px;margin-top: 5px;"></i></a>
+              </div>
+            </div>
+          </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="card mb-3" style="width: 100%;">
+                <div class="card-body">
+                  <h5 class="card-title">Services Company<i class="fa-solid fa-shield-halved" style="margin-left: 10px;"></i></h5>
+                  <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <a href="#" class="card-link" style="text-decoration: none;color: black;">Read More <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 5px;margin-top: 4px;"></i></a>
+                  <a href="#" class="card-link" style="text-decoration: none;color: black;">Another Links <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 10px;margin-top: 5px;"></i></a>
+                </div>
+              </div>
+            </div>
+              <div class="col-md-6 col-lg-3">
+                <div class="card mb-3" style="width: 100%;">
+                  <div class="card-body">
+                    <h5 class="card-title">Owner<i class="fa-solid fa-people-group" style="margin-right: 10px;"></i></h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <a href="#" class="card-link" style="text-decoration: none;color: black;">Read More <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 5px;margin-top: 4px;"></i></a>
+                    <a href="#" class="card-link" style="text-decoration: none;color: black;">Another Links <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 10px;margin-top: 5px;"></i></a>
+                  </div>
+                </div>
+              </div>
+                <div class="col-md-6 col-lg-3">
+                  <div class="card mb-3" style="width: 100%;">
+                    <div class="card-body">
+                      <h5 class="card-title">Team <i class="fa-solid fa-users" style="margin-left: 10px;"></i></h5>
+                      <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                      <a href="#" class="card-link" style="text-decoration: none;color: black;">Read More <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 5px;margin-top: 4px;"></i></a>
+                      <a href="#" class="card-link" style="text-decoration: none;color: black;">Another Links <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 10px;margin-top: 5px;"></i></a>
+                    </div>
+                  </div>
+                </div>
+                  <div class="col-md-6 col-lg-3">
+                    <div class="card mb-3" style="width: 100%;">
+                      <div class="card-body">
+                        <h5 class="card-title">Security <i class="fa-solid fa-user-secret" style="margin-left: 10px;"></i></h5>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="card-link" style="text-decoration: none;color: black;">Read More <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 5px;margin-top: 4px;"></i></a>
+                      <a href="#" class="card-link" style="text-decoration: none;color: black;">Another Links <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 10px;margin-top: 5px;"></i></a>
+                      </div>
+                    </div>
+                  </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="card mb-3" style="width: 100%;">
+                        <div class="card-body">
+                          <h5 class="card-title">Emergency <i class="fa-solid fa-tower-broadcast" style="margin-left: 10px;"></i></h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link" style="text-decoration: none;color: black;">Read More <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 5px;margin-top: 4px;"></i></a>
+                          <a href="#" class="card-link" style="text-decoration: none;color: black;">Another Links <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 10px;margin-top: 5px;"></i></a>
+                        </div>
+                      </div>
+                    </div>
+                      <div class="col-md-6 col-lg-3">
+                        <div class="card mb-3" style="width: 100%;">
+                          <div class="card-body">
+                            <h5 class="card-title">Social Media <i class="fa-solid fa-share-from-square" style="margin-left: 10px;"></i></h5>
+                            <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <a href="#" class="card-link" style="text-decoration: none;color: black;">Read More <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 5px;margin-top: 4px;"></i></a>
+                            <a href="#" class="card-link" style="text-decoration: none;color: black;">Another Links <i class="fa-solid fa-arrow-right" style="color: #000000;margin-right: 10px;margin-top: 5px;"></i></a>
+                          </div>
+                        </div>
+                      </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end news -->
+    <!-- ---------------------------------------------------------------------- -->
+    <div class="alert alert-primary m-2" role="alert">
+      A simple primary alert—check it out!
+    </div>
+    
+        <!-- ---------------------------------------------------------------------- -->
+        <!-- start footer -->
+        <div class="footer" id="con" style="margin-top: 20px;">
+          <div class="continer m-2">
+            <h4>Stay In Tocuh</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, sunt:</p>
+          </div>
+        </div>
+        <div class="content">
+          <form>
+            <div class="row m-2">
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Enter email" name="email">
+              </div>
+              <div class="col">
+                <input type="password" class="form-control" placeholder="Enter password" name="pswd">
+              </div>
+              <div class="mb-3 mt-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+              </div>
+              <div class="mb-3">
+                <label for="pwd" class="form-label">Password:</label>
+                <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="pswd">
+              </div>
+              <div class="form-check mb-3">
+                <label class="form-check-label">
+                  <input class="form-check-input" type="checkbox" name="remember"> Remember me
+                </label>
+              </div>
+              <button type="submit" class="btn btn-primary">Submit</button>
+            
+            </div>
+          </form> 
+        </div>
+        <!-- end footer -->
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- start landing -->
+    <div class="lanidng" style="margin-top: 20px;">
+      <div class="continer">
+        <div class="row text-center lh-lg m-2">
+          <div class=" col col-md-2 col-lg-2">
+            <div class="iamge mb-2">
+              <img src="img/clients/airbnb.png" class="img-fluid" alt="">
+            </div>
+
+          </div>
+          <div class="col col-md-2 col-lg-2">
+            <div class="iamge mb-2">
+              <img src="img/clients/google.png" class="img-fluid" alt="">
+            </div>
+
+          </div>
+          <div class="col col-md-2 col-lg-2">
+            <div class="iamge">
+              <img src="img/clients/mailchimp.png" class="img-fluid" alt="">
+            </div>
+
+          </div>
+          <div class="col col-md-2 col-lg-2">
+            <div class="iamge mb-2">
+              <img src="img/clients/paypal.png" class="img-fluid" alt="">
+            </div>
+
+          </div>
+          <div class="col col-md-2 col-lg-3">
+            <div class="iamge mb-2">
+              <img src="img/clients/stripe.png" class="img-fluid" alt="">
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end landing -->
+    <!-- ---------------------------------------------------------------------- -->
+    <!-- start end -->
+     <!-- start footer -->
+     <div class="footerr">
+      <div class="row">
+        <div class="col-md-6 col-lg-3">
+          <div class="box" class="one">
+            <h2 class="text-light">Omar</h2>
+            <i class="fa-brands fa-facebook" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-twitter" style="color: #ffffff;"></i>
+            <i class="fa-brands fa-linkedin" style="color: #ffffff;"></i>
+            <p class="text-light">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Saepe, aperiam delectus nostrum et quibusdam facere totam libero modi mollitia earum!</p>
+          </div>
+
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box">
+            <li><a href="#"><i class="fa-solid fa-angles-right" style="color: #0000ff;"></i>Important Link 1</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right" style="color: #0000ff;"></i>Important Link 2</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right" style="color: #0000ff;"></i>Important Link 3</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right" style="color: #0000ff;"></i>Important Link 4</a></li>
+            <li><a href="#"><i class="fa-solid fa-angles-right" style="color: #0000ff;"></i>Important Link 5</a></li>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box mt-3">
+            <div class="line">
+              <p class="text-light"><i class="fas fa-map-marker-alt fa-fw" style="color: #0000ff;"></i>Egypt, Giza, Inside The Sphinx, Room Number 220</p>
+            </div>
+            <div class="line">
+              <div class="info text-light" class="text-light"><i class="far fa-clock fa-fw" style=" color: blue;"></i>
+                Business Hours: From 10:00 To 18:00</div>
+            </div>
+            <br>
+            <div class="line">
+              <div class="info">
+                <i class="fas fa-phone-volume fa-fw" style="color: blue;"></i>
+                <span class="text-light">+20123456789</span>
+                <span class="text-light">+20198765432</span>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="box text-center mt-4">
+            <img  src="img/end photo/gallery-01.png" alt="" />
+            <img  src="img/end photo/gallery-02.png" class="img-fluid" alt="" />
+            <img  src="img/end photo/gallery-03.jpg" class="img-fluid" alt="" />
+            <img  src="img/end photo/gallery-04.png" class="img-fluid" alt="" />
+            <img src="img/end photo/gallery-05.jpg" class="img-fluid" alt="" />
+            <img src="img/end photo/gallery-06.png" class="img-fluid w-10" alt="" />
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    <!-- end footer -->
+    <!-- end -->
+    <div class="end">
+      <i class="fa-brands fa-linkedin" style="color: black;"></i>
+      <i class="fa-brands fa-github" style="color: black;"></i>
+      <i class="fa-brands fa-pinterest" style="color: #000000;"></i>
+      <p>&copy;All Reverserd Copy </p>
+      <p>By Omar Rehan</p>
+    </div>
+    <!-- end end -->
+    <!-- ---------------------------------------------------------------------- -->
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>    
+</body>
+</html>
